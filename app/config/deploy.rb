@@ -19,7 +19,7 @@ role :app,        domain, :primary => true       # This may be the same as your 
 set  :shared_files,     ["app/config/parameters.yml"]
 set  :shared_children,  [app_path + "/logs", web_path + "/uploads"]
 
-#set  :use_composer,     true
+set  :use_composer,     false
 #set  :update_vendors,   true
 set  :keep_releases,  3
 
