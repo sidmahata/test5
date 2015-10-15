@@ -1,6 +1,6 @@
 set :application, "test5"
-set :domain,      "45.63.52.40"
-set :user,       "root"
+set :domain,      "192.168.33.10"
+set :user,       "vagrant"
 set :use_sudo,    false
 set :deploy_to,   "/var/www/"
 set :app_path,    "app"
@@ -24,7 +24,6 @@ set  :update_vendors,   true
 set  :keep_releases,  3
 
 
-after "deploy:setup", "upload_parameters"
 
 # Be more verbose by uncommenting the following line
 # logger.level = Logger::MAX_LEVEL
